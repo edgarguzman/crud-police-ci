@@ -1,0 +1,225 @@
+@font-face { font-family: CantigaThin; src: url("font/CantigaThin.otf") format("opentype"); font-style: normal; }
+@font-face { font-family: CantigaThin; src: url("font/CantigaThinItalic.otf") format("opentype"); font-style: italic; }
+@font-face { font-family: CantigaLight; src: url("font/CantigaLight.otf") format("opentype"); font-style: normal; }
+@font-face { font-family: CantigaLight; src: url("font/CantigaLightItalic.otf") format("opentype"); font-style: italic; }
+
+@media(max-width:767px){
+	label { float: left !important; }
+}
+
+@media (max-height:819px) and (max-width:1127px) {
+    #footer { display: none !important; }
+}
+
+body {
+	background-image: url("../../template/img/subtle_dots.png"); 
+	font-family: "Calibri", "Arial Narrow", verdana !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "CantigaLight", "Calibri", "Arial Narrow", verdana !important;
+}
+
+.header {
+	font-family: "CantigaLight", "Calibri", "Arial Narrow", verdana !important;
+}
+
+.info {
+	font-family: "CantigaLight", "Calibri", "Arial Narrow", verdana !important;
+	font-size: 90%;
+	font-weight: 700;
+}
+
+label {
+	float: right;
+	cursor: default;
+}
+
+input {
+	text-transform: uppercase;
+	width: 100%;
+	padding-right: 1px;
+}
+
+input[type=radio], input[type=checkbox] {
+	width: auto !important;
+}
+
+input[type=button], input[type=submit], button {
+	margin-left: 10px !important;
+	height: 100% !important;
+	font-family: "Calibri", "Arial Narrow", verdana !important;
+}
+
+td {
+	width: 100% !important;
+}
+
+.aling-top{
+	vertical-align: top !important;
+	margin: 0 !important;
+}
+
+.aling-bot{
+	vertical-align: bottom !important;
+	margin: 0 !important;
+}
+
+.aling-mid{
+	vertical-align: middle !important;
+	margin: 0 !important;
+}
+
+.aling-center {
+	text-align: center !important;
+	margin: 0 !important;
+}
+
+.aling-right {
+	text-align: right !important;
+	margin: 0 !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+#header{
+	display: block;
+	position: fixed; 
+	top: 0;
+	left: 0;
+	width: 100%; 
+	z-index: 999; 
+}
+
+#container {
+	display: block;
+	margin: auto;
+	padding-top: 42px;
+	width: 1017px;
+	/*min-height: 800px;*/
+}
+
+#footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 998;
+}
+
+#seeker {
+	margin: auto;
+	width: 1017px;
+}
+
+#logo {
+	position: absolute;
+	background-image: url("../img/logo_sm_min_blue.png");
+	bottom: 0;
+	right: 0;
+	width: 57px;
+	height: 40px;
+	z-index: 997;
+}
+
+#logoBack1 {
+    position: absolute;
+    background-color: #f1f1f1;
+    bottom: 0;
+    right: 9px;
+    width: 45px;
+    height: 34px;
+    border-top-left-radius: 100% 100%;
+    border-top-right-radius: 60% 100%;
+    border-bottom-right-radius: 10% 70%;
+    -o-border-top-left-radius: 100% 100%;
+    -o-border-top-right-radius: 60% 100%;
+    -o-border-bottom-right-radius: 10% 70%;
+    -ms-border-top-left-radius: 100% 100%;
+    -ms-border-top-right-radius: 60% 100%;
+    -ms-border-bottom-right-radius: 10% 70%;
+    -moz-border-top-left-radius: 100% 100%;
+    -moz-border-top-right-radius: 60% 100%;
+    -moz-border-bottom-right-radius: 10% 70%;
+    -webkit-border-top-left-radius: 100% 100%;
+    -webkit-border-top-right-radius: 60% 100%;
+    -webkit-border-bottom-right-radius: 10% 70%;
+    z-index: 996;
+}
+
+#logoBack2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 39px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 77px solid #f1f1f1;
+    z-index: 995;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+
+.button {
+	height: 25px !important;
+}
+
+.bg-blue{
+	background-color: #0058a0;
+}
+
+.text-white{
+	color: #fff;
+}
+
+.text-blue{
+	color: #2f69a2; /*#0058a0;*/
+}
+
+.btn-gris-blue{
+	background-color: #e8e8e8;
+	color: #0058a0;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+}
+
+.btn-gris-blue:hover{
+	background-color: #dddddd;
+	color: #4588bb;
+}
+
+.border-1px{
+	border: 1px solid; 
+}
+
+.border-blue{
+	border-color: #0058a0; 
+}
+
+.ui-dialog-titlebar-close, .ui-dialog .ui-dialog-titlebar {
+  display: none;
+}
+
+.ui-dialog .ui-dialog-content {
+	padding: 0;
+}
+
+.ui-widget-content {
+	background: none;
+	border: none;
+}
