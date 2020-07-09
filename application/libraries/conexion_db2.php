@@ -9,22 +9,20 @@ class ConexionDB2 {
     private $error;
 
     public function __construct() {
-        if ($_SERVER['SERVER_NAME'] == '192.168.100.13') {
-            $this->host = 'NEWDESA';
-            $this->user = 'rocamo01';
-            $this->pass = 'rocamo01';
+        if ($_SERVER['SERVER_NAME'] == 'localhost') {
+            $this->host = 'dev';
+            $this->user = 'root';
+            $this->pass = '';
 
-        } elseif ($_SERVER['SERVER_NAME'] == 'mexplota2') {
-            // SQA
-            $this->host = "SQA";
-            $this->user = "UPCUW";
-            $this->pass = "PWCUW";
+        } elseif ($_SERVER['SERVER_NAME'] == 'localhost') {
+            $this->host = 'qa';
+            $this->user = 'root';
+            $this->pass = '';
 
-        } elseif ($_SERVER['SERVER_NAME'] == 'mexplota') {
-            // PRODUCCIÓN
-            $this->host = "S1064BD0";
-            $this->user = "UPCUW";
-            $this->pass = "PWCUW";
+        } elseif ($_SERVER['SERVER_NAME'] == 'localhost') {
+            $this->host = 'prod';
+            $this->user = 'root';
+            $this->pass = '';
         }
     }
 
